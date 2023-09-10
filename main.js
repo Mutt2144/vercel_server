@@ -10,7 +10,7 @@ const { MainRoute } = require("./houtes/mainHoute");
 app.use(express.static("./app"));
 app.use(express.json());
 
-app.get("/", MainRoute);
+app.get("/home", MainRoute);
 
 app.listen(port, ip, () => {
     log(`Active on address: ${ip}:${port}`);
